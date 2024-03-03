@@ -1,0 +1,41 @@
+---
+import bgImage from "../assets/images/your-insta-pro-main-image.png";
+import markSvg from "../assets/images/mark.svg";
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+---
+
+<section
+  class="min-h-[calc(100vh-100px)] h-full w-full bg-no-repeat bg-cover bg-center relative z-10 bg-black bg-opacity-50 px-36 flex justify-between"
+  style={{ backgroundImage: `url(${bgImage.src})` }}
+>
+  <div class="self-start max-w-[515px] w-full relative mt-24">
+    <Image src={markSvg} alt="SVG" class="absolute" />
+    <div class="px-8 mb-6 leading-tight">
+      <p class="font-extrabold text-[80px] text-[#222222]">Your</p>
+      <p class="font-extrabold text-[80px] text-[#222222]">Instagram</p>
+      <p class="font-extrabold text-[80px] text-[#222222]">Pro.</p>
+    </div>
+    <span
+      class="text-[#BA891F] font-bold text-[37px] absolute z-10 -bottom-8 left-6 bg-transparent"
+      >Instagram Marketing</span
+    >
+  </div>
+
+  <div class="flex self-end items-center mb-24">
+    <Icon
+      name="fa6-solid:arrow-down"
+      size={56}
+      color="#BA891F"
+      class="animate-bounce"
+    />
+    <div>
+      <p class="text-3xl text-[#222] font-bold">
+        Are you looking to boost your
+      </p>
+      <p class="text-3xl text-[#222] font-bold">
+        brand's presence on Instagram?
+      </p>
+    </div>
+  </div>
+</section>
