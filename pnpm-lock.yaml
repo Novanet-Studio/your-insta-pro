@@ -11,6 +11,9 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.4.9)(tailwindcss@3.4.1)
+  '@fontsource-variable/noto-sans-jp':
+    specifier: ^5.0.17
+    version: 5.0.17
   '@iconify-json/fa6-regular':
     specifier: ^1.1.18
     version: 1.1.18
@@ -620,6 +623,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource-variable/noto-sans-jp@5.0.17:
+    resolution: {integrity: sha512-Nn/FXR3A/dNIYcRKNXEM/DVxRs6prfT38Z69N08MG26gMnVRXiAUsWADAr4VrOGOeNlLoEnDLD7TXTxFymq6Ww==}
+    dev: false
 
   /@iconify-json/fa6-regular@1.1.18:
     resolution: {integrity: sha512-+lLtiTHf02rxeC/9R6vzJi9eGcuubzeHfTt/HWvDnovz2Kt5NEntW8foUSLeLo7kPU7RNvea68lt7QM9HYFloQ==}
