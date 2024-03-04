@@ -1,0 +1,11 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { name = "" } = Astro.props;
+---
+
+<div
+  class="bg-[radial-gradient(50%_50%_at_50%_50%,_#FEF3A4_0%,_#BA891F_100%)] w-[25px] h-[25px] flex justify-center items-center rounded-full lg:w-[45px] lg:h-[45px]"
+>
+  <Icon name={name} class="text-[rgba(34,_34,_34,_1)] text-sm lg:text-xl" />
+</div>
