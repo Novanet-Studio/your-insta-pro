@@ -1,0 +1,32 @@
+---
+import { Icon } from "astro-icon/components";
+import bgImage from "../assets/images/contact-image-with-bg.png";
+---
+
+<section
+  class="min-h-screen h-full w-full bg-no-repeat bg-cover bg-center relative z-10 bg-black bg-opacity-50 px-36 flex justify-center"
+  style={{ backgroundImage: `url(${bgImage.src})` }}
+>
+  <div
+    class="self-start flex flex-col items-center gap-12 max-w-[742px] min-h-[742px] w-full mt-24 bg-black/70 p-12 backdrop-blur-sm"
+  >
+    <div
+      class="bg-[radial-gradient(50%_50%_at_50%_50%,_#FEF3A4_0%,_#BA891F_100%)] w-[109px] h-[109px] flex justify-center items-center rounded-full mt-12"
+    >
+      <Icon
+        name="fa-solid:envelope"
+        size={54}
+        class="text-[rgba(34,_34,_34,_1)] text-4xl"
+      />
+    </div>
+    <p
+      class="text-[rgba(232,_232,_232,_1)] font-light text-[40px] leading-[45px] text-center"
+    >
+      For inquiries or to set up a free phone consultation to find the best
+      package for you, email us at
+    </p>
+    <p class="text-[rgba(232,_232,_232,_1)] text-3xl leading-normal font-bold">
+      yourinstagrampro@outlook.com
+    </p>
+  </div>
+</section>
