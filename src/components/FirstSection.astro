@@ -1,0 +1,23 @@
+---
+import Image from "astro/components/Image.astro";
+import roundedImage from "../assets/images/first-rounded-image.png";
+---
+
+<section
+  class="min-h-[50vh] h-full bg-[#E8E8E8] flex justify-around px-36 relative"
+>
+  <Image
+    class="absolute left-64 -top-28 z-10"
+    src={roundedImage}
+    alt="Woman seeing instagram"
+  />
+  <div></div>
+  <div class="flex flex-col justify-center">
+    <p
+      class="text-[#1D1D1D] mt-4 text-balance font-bold text-[55px] max-w-[700px]"
+    >
+      Our content creation and marketing services are designed to help you stand
+      out in the crowded <span class="text-[#BA891F]">digital landscape.</span>
+    </p>
+  </div>
+</section>
