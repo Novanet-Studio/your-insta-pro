@@ -1,5 +1,4 @@
 ---
-import Image from "astro/components/Image.astro";
 import markSvg from "../assets/images/to-see-work-mark.svg";
 ---
 
@@ -7,7 +6,8 @@ import markSvg from "../assets/images/to-see-work-mark.svg";
   class="min-h-[435px] h-full bg-[#E8E8E8] flex items-center justify-center px-36 relative"
 >
   <div class="max-w-[786px] w-full relative">
-    <Image src={markSvg} alt="SVG" class="absolute" />
+    <!-- <Image src={markSvg} alt="SVG" class="absolute" /> -->
+    <img src={markSvg.src} alt="Mark SVG" class="absolute" />
     <div class="px-8 mb-6 leading-tight">
       <p class="font-light text-4xl mt-10 text-[#222222]">
         Currently managing the Instagram accounts for <span class="font-bold"

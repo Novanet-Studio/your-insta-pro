@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
-import { Image } from "astro:assets";
+// import { Image } from "astro:assets";
 import logo from "../assets/images/your-insta-pro-logo.png";
 import novanetLogo from "../assets/images/novanet-logo.svg";
 ---
@@ -38,13 +38,15 @@ import novanetLogo from "../assets/images/novanet-logo.svg";
   </div>
   <div class="flex-1 flex justify-center">
     <a href="/">
-      <Image class="max-w-[8rem]" src={logo} alt="Your Insta Pro" />
+      <!-- <Image class="max-w-[8rem]" src={logo} alt="Your Insta Pro" /> -->
+      <img class="max-w-[8rem]" src={logo.src} alt="Your Insta Pro" />
     </a>
   </div>
   <div class="flex-1 flex items-center gap-4 justify-end">
     <p class="font-light text-xl">Made by:</p>
     <a href="https://www.novanet.studio" target="_blank">
-      <Image class="max-w-[8rem]" src={novanetLogo} alt="Astro" />
+      <!-- <Image class="max-w-[8rem]" src={novanetLogo} alt="Astro" /> -->
+      <img class="max-w-[8rem]" src={novanetLogo.src} alt="Astro" />
     </a>
   </div>
 </footer>
