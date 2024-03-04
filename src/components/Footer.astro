@@ -1,0 +1,50 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import logo from "../assets/images/your-insta-pro-logo.png";
+import novanetLogo from "../assets/images/novanet-logo.svg";
+---
+
+<footer class="flex items-center px-36 pt-[8px] py-4">
+  <div class="flex gap-3 items-center flex-1">
+    <p class="font-light text-xl">Your Insta Pro - 2024</p>
+    <div
+      class="bg-[radial-gradient(50%_50%_at_50%_50%,_#FEF3A4_0%,_#BA891F_100%)] w-[45px] h-[45px] flex justify-center items-center rounded-full"
+    >
+      <Icon
+        name="fa-solid:mobile-alt"
+        size={24}
+        class="text-[rgba(34,_34,_34,_1)] text-4xl"
+      />
+    </div>
+    <div
+      class="bg-[radial-gradient(50%_50%_at_50%_50%,_#FEF3A4_0%,_#BA891F_100%)] w-[45px] h-[45px] flex justify-center items-center rounded-full"
+    >
+      <Icon
+        name="fa6-brands:instagram"
+        size={24}
+        class="text-[rgba(34,_34,_34,_1)] text-4xl"
+      />
+    </div>
+    <div
+      class="bg-[radial-gradient(50%_50%_at_50%_50%,_#FEF3A4_0%,_#BA891F_100%)] w-[45px] h-[45px] flex justify-center items-center rounded-full"
+    >
+      <Icon
+        name="fa-solid:envelope"
+        size={24}
+        class="text-[rgba(34,_34,_34,_1)] text-4xl"
+      />
+    </div>
+  </div>
+  <div class="flex-1 flex justify-center">
+    <a href="/">
+      <Image class="max-w-[8rem]" src={logo} alt="Your Insta Pro" />
+    </a>
+  </div>
+  <div class="flex-1 flex items-center gap-4 justify-end">
+    <p class="font-light text-xl">Made by:</p>
+    <a href="https://www.novanet.studio" target="_blank">
+      <Image class="max-w-[8rem]" src={novanetLogo} alt="Astro" />
+    </a>
+  </div>
+</footer>
