@@ -1,12 +1,12 @@
 ---
 import { Icon } from "astro-icon/components";
 import Image from "astro/components/Image.astro";
-import roundedImage from "../assets/images/first-rounded-image.png";
+import roundedImage from "../assets/images/second-rounded-image.png";
 import pictureGallery from "../assets/images/ig-gallery.png";
 ---
 
 <section
-  class="min-h-[100vh] h-full bg-[#222222] flex flex-col justify-center gap-36 px-36 relative"
+  class="min-h-[100vh] h-full bg-[#222222] flex flex-col justify-center gap-20 px-36 relative"
 >
   <div class="flex justify-evenly">
     <div class="flex flex-col justify-center">
@@ -17,10 +17,15 @@ import pictureGallery from "../assets/images/ig-gallery.png";
         captivate <span class="text-[#BA891F]">your audience.</span>
       </p>
     </div>
-    <Image src={roundedImage} alt="Person seeing a picture" />
+    <Image
+      class="-top-28 absolute right-72"
+      src={roundedImage}
+      alt="Person seeing a picture"
+    />
+    <div class="w-[628px] h-[628px]"></div>
   </div>
 
-  <div class="flex justify-evenly items-center">
+  <div class="flex justify-evenly items-center pb-36">
     <Image src={pictureGallery} alt="Gallery of profiles" />
     <div>
       <Icon name="fa6-brands:instagram" color="#2f2f2f" size={250} />

@@ -1,15 +1,18 @@
 ---
+import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 import logo from "../assets/images/your-insta-pro-logo.png";
 ---
 
-<header class="flex items-center justify-between px-20 pt-[8px]">
+<header class="flex items-center justify-between px-36 py-3">
   <a href="/">
     <Image class="max-w-[8rem]" src={logo} alt="Your Insta Pro" />
   </a>
-  <nav>
+  <Icon name="fa-solid:bars" class="text-2xl text-[rgba(34,_34,_34,_1)]" />
+
+  <!-- <nav>
     <ul>
       <li><a href="/">Home</a></li>
     </ul>
-  </nav>
+  </nav> -->
 </header>
