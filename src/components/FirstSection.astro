@@ -1,25 +1,19 @@
 ---
-import { Image } from "astro:assets";
 import roundedImage from "../assets/images/first-rounded-image.png";
 ---
 
 <section
-  class="min-h-[70vh] h-full bg-[#E8E8E8] flex justify-between px-36 relative pb-36"
+  class="min-h-[70vh] h-full bg-[#E8E8E8] flex justify-between items-center px-8 relative pt-36 pb-32 lg:px-36 lg:pt-0 lg:pb-36"
 >
-  <!-- <Image
-    class="absolute left-64 -top-24 z-10"
-    src={roundedImage}
-    alt="Woman seeing instagram"
-  /> -->
   <img
-    class="absolute left-64 -top-24 z-10"
+    class="absolute w-56 left-20 z-10 -top-10 lg:left-64 lg:-top-24"
     src={roundedImage.src}
     alt="Woman seeing instagram"
   />
   <div></div>
-  <div class="flex flex-col justify-center">
+  <div class="flex flex-col justify-center mt-20">
     <p
-      class="text-[#1D1D1D] mt-4 text-balance font-bold text-[55px] max-w-[700px]"
+      class="text-[#1D1D1D] mt-4 text-balance font-bold max-w-[700px] text-2xl lg:text-[55px]"
     >
       Our content creation and marketing services are designed to help you stand
       out in the crowded <span class="text-[#BA891F]">digital landscape.</span>
