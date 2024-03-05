@@ -5,13 +5,14 @@ import markSvg from "../assets/images/mark.svg";
 ---
 
 <section
+  id="home"
   class="min-h-[calc(100vh-70px)] h-full w-full bg-no-repeat bg-cover bg-[center_left_-4rem] relative z-10 bg-black bg-opacity-50 px-6 flex flex-col justify-between md:bg-[center_left_-10rem] md:px-10 lg:min-h-[calc(100vh-100px)] lg:px-24 lg:bg-center"
   style={{ backgroundImage: `url(${bgImage.src})` }}
 >
   <div
     class="self-center max-w-[17.50rem] w-full relative mt-24 md:max-w-[22rem] md:mt-28 md:self-start lg:max-w-[23rem] lg:mt-14"
   >
-    <img src={markSvg.src} alt="SVG" class="absolute" />
+    <img src={markSvg.src} alt="SVG" class="absolute opacity-0" />
     <div class="px-4 mb-3 leading-tight md:px-6 md:mt-4 lg:px-8 lg:mb-6">
       <p class="font-extrabold text-5xl text-[#222222] md:text-6xl lg:text-6xl">
         Your
@@ -28,6 +29,7 @@ import markSvg from "../assets/images/mark.svg";
   </div>
 
   <div
+    id="homeText"
     class="flex items-center self-center mb-24 gap-4 md:self-start lg:self-end lg:mb-10"
   >
     <Icon
@@ -45,3 +47,42 @@ import markSvg from "../assets/images/mark.svg";
     </div>
   </div>
 </section>
+
+<script>
+  import { animate, timeline, stagger } from "motion";
+
+  window.addEventListener("DOMContentLoaded", () => {
+    timeline([
+      [
+        "#home > div > img",
+        {
+          opacity: [0, 1],
+          // translate: [20, 0],
+        },
+      ],
+      [
+        "#home > div > div > p",
+        {
+          opacity: [0, 1],
+          translate: [20, 0],
+        },
+        {
+          delay: stagger(0.2),
+        },
+      ],
+      [
+        "#home > div > span",
+        {
+          opacity: [0, 1],
+          translate: [20, 0],
+        },
+      ],
+      [
+        "#home > #homeText",
+        {
+          opacity: [0, 1],
+        },
+      ],
+    ]);
+  });
+</script>
