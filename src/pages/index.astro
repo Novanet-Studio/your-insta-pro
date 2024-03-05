@@ -18,3 +18,17 @@ import Mailing from "../components/Mailing.astro";
     <Mailing />
   </main>
 </Layout>
+
+<script>
+  import { animate, scroll } from "motion";
+  const selectors = ["section > div", "section > img", "section > div > img"];
+
+  selectors.forEach((selector) => {
+    document.querySelectorAll(selector).forEach((item) => {
+      scroll(animate(item, { opacity: [0, 1, 1, 0] }), {
+        target: item,
+        offset: ["start end", "end", "start", "end start"],
+      });
+    });
+  });
+</script>
