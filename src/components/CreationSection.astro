@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
-import roundedImage from "../assets/images/second-rounded-image.png";
-import pictureGallery from "../assets/images/ig-gallery.png";
+import image from "../assets/images/your-insta-pro-woman-watching-pictures.webp";
+import pictureGallery from "../assets/images/your-insta-pro-multiple-profiles.webp";
 ---
 
 <section
@@ -19,8 +19,8 @@ import pictureGallery from "../assets/images/ig-gallery.png";
       </p>
     </div>
     <img
-      class="-top-12 absolute right-20 w-56 md:w-96 md:-top-20 lg:-top-20 lg:right-36"
-      src={roundedImage.src}
+      class="-top-12 absolute rounded-full right-20 object-cover w-56 h-56 md:w-96 md:h-96 md:-top-20 lg:-top-20 lg:right-36"
+      src={image.src}
       alt="Person seeing a picture"
     />
   </div>
@@ -29,7 +29,9 @@ import pictureGallery from "../assets/images/ig-gallery.png";
     class="flex flex-col justify-evenly items-center gap-4 pb-12 md:mt-12 lg:flex-row lg:pb-36 lg:gap-16 lg:items-start"
   >
     <img
-      class="max-w-[80vw] md:max-w-[50vw] lg:max-w-[40vw] lg:max-h-[35rem]"
+      width="742"
+      height="1036"
+      class="max-w-[80vw] object-contain md:max-w-[50vw] rounded-2xl lg:w-[570px] lg:max-h-[45rem] lg:h-[45rem]"
       src={pictureGallery.src}
       alt="Gallery of profiles"
     />
