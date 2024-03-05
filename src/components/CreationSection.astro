@@ -7,17 +7,19 @@ import pictureGallery from "../assets/images/ig-gallery.png";
 <section
   class="min-h-[100vh] h-full bg-[#222222] flex flex-col justify-center gap-10 px-8 relative lg:px-36 lg:gap-20"
 >
-  <div class="flex flex-col justify-between lg:flex-row">
-    <div class="flex flex-col justify-center mt-44 px-4 lg:mt-0 lg:px-0">
+  <div class="flex flex-col justify-between md:mt-36 lg:flex-row">
+    <div
+      class="flex flex-col justify-center mt-44 px-4 md:items-end md:mr-12 lg:mt-0 lg:px-0"
+    >
       <p
-        class="text-[#A7A8A8] mt-4 text-pretty font-bold text-2xl max-w-auto text-right lg:text-[55px] lg:leading-[70px] lg:max-w-[732px]"
+        class="text-[#A7A8A8] mt-4 text-pretty font-bold text-2xl max-w-auto text-right md:max-w-sm lg:text-[55px] lg:leading-[70px] lg:max-w-[732px]"
       >
         We can create engaging and visually appealing content that will
         captivate <span class="text-[#BA891F]">your audience.</span>
       </p>
     </div>
     <img
-      class="-top-12 absolute right-20 w-56 lg:w-full lg:-top-28 lg:right-64"
+      class="-top-12 absolute right-20 w-56 md:w-96 md:-top-20 lg:w-full lg:-top-28 lg:right-64"
       src={roundedImage.src}
       alt="Person seeing a picture"
     />
@@ -25,17 +27,17 @@ import pictureGallery from "../assets/images/ig-gallery.png";
   </div>
 
   <div
-    class="flex flex-col justify-evenly items-center gap-4 pb-12 lg:flex-row lg:pb-36"
+    class="flex flex-col justify-evenly items-center gap-4 pb-12 md:mt-12 lg:flex-row lg:pb-36"
   >
     <img
-      class="max-w-[80vw]"
+      class="max-w-[80vw] md:max-w-[50vw]"
       src={pictureGallery.src}
       alt="Gallery of profiles"
     />
     <div class="flex flex-col-reverse items-center gap-4">
       <Icon class="text-9xl" name="fa6-brands:instagram" color="#2f2f2f" />
       <p
-        class="text-[#A7A8A8] text-2xl text-balance font-bold max-w-[730px] lg:text-[55px]"
+        class="text-[#A7A8A8] text-2xl text-balance font-bold md:max-w-sm md:mt-4 lg:text-[55px] lg:max-w-[730px]"
       >
         Let us help you elevate your Instagram presence and drive more traffic <span
           class="text-[#BA891F]">to your business.</span

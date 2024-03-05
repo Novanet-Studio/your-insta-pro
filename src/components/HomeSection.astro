@@ -5,37 +5,45 @@ import markSvg from "../assets/images/mark.svg";
 ---
 
 <section
-  class="min-h-[calc(100vh-70px)] h-full w-full bg-no-repeat bg-cover bg-[center_left_-4rem] relative z-10 bg-black bg-opacity-50 px-6 flex flex-col justify-between lg:min-h-[calc(100vh-100px)] lg:px-20 lg:bg-center"
+  class="min-h-[calc(100vh-70px)] h-full w-full bg-no-repeat bg-cover bg-[center_left_-4rem] relative z-10 bg-black bg-opacity-50 px-6 flex flex-col justify-between md:bg-[center_left_-10rem] md:px-10 lg:min-h-[calc(100vh-100px)] lg:px-20 lg:bg-center"
   style={{ backgroundImage: `url(${bgImage.src})` }}
 >
   <div
-    class="self-center max-w-[17.50rem] w-full relative mt-24 lg:max-w-[515px] lg:self-start"
+    class="self-center max-w-[17.50rem] w-full relative mt-24 md:max-w-[22rem] md:mt-28 lg:max-w-[515px] md:self-start"
   >
     <img src={markSvg.src} alt="SVG" class="absolute" />
-    <div class="px-4 mb-3 leading-tight lg:px-8 lg:mb-6">
-      <p class="font-extrabold text-5xl text-[#222222] lg:text-[80px]">Your</p>
-      <p class="font-extrabold text-5xl text-[#222222] lg:text-[80px]">
+    <div class="px-4 mb-3 leading-tight md:px-6 md:mt-4 lg:px-8 lg:mb-6">
+      <p
+        class="font-extrabold text-5xl text-[#222222] md:text-6xl lg:text-[80px]"
+      >
+        Your
+      </p>
+      <p
+        class="font-extrabold text-5xl text-[#222222] md:text-6xl lg:text-[80px]"
+      >
         Instagram
       </p>
       <p class="font-extrabold text-5xl text-[#222222] lg:text-[80px]">Pro.</p>
     </div>
     <span
-      class="text-[#BA891F] font-bold absolute text-xl z-10 -bottom-9 left-4 bg-transparent lg:text-[37px] lg:-bottom-8 lg:left-6"
+      class="text-[#BA891F] font-bold absolute text-xl z-10 -bottom-9 left-4 bg-transparent md:text-2xl md:-bottom-10 md:left-7 lg:text-[37px] lg:-bottom-8 lg:left-6"
       >Instagram Marketing</span
     >
   </div>
 
-  <div class="flex items-center self-center mb-24 gap-4 lg:self-end">
+  <div
+    class="flex items-center self-center mb-24 gap-4 md:self-start lg:self-end"
+  >
     <Icon
       name="fa6-solid:arrow-down"
       color="#BA891F"
-      class="animate-bounce text-3xl"
+      class="animate-bounce text-3xl md:text-4xl"
     />
     <div>
-      <p class="text-lg font-bold text-[#222] lg:text-3xl">
+      <p class="text-lg font-bold text-[#222] md:text-xl lg:text-3xl">
         Are you looking to boost your
       </p>
-      <p class="text-lg font-bold text-[#222] lg:text-3xl">
+      <p class="text-lg font-bold text-[#222] md:text-xl lg:text-3xl">
         brand's presence on Instagram?
       </p>
     </div>
