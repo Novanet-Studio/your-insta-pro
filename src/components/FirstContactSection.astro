@@ -4,25 +4,29 @@ import bgImage from "../assets/images/contact-image.png";
 ---
 
 <section
-  class="min-h-[80vh] h-full w-full bg-no-repeat bg-cover bg-center relative z-10 bg-black bg-opacity-50 px-36 flex justify-between"
+  class="min-h-screen h-full px-8 w-full bg-no-repeat bg-cover bg-center relative z-10 bg-black bg-opacity-50 flex justify-between lg:min-h-[80vh] lg:px-36"
   style={{ backgroundImage: `url(${bgImage.src})` }}
 >
   <div class="self-start max-w-[515px] w-full relative mt-24">
-    <h4 class="font-bold text-[55px] leading-normal">Contact</h4>
-    <p class="font-light text-[37px] leading-tight max-w-[590px]">
+    <h4 class="font-bold text-2xl leading-normal lg:text-[55px]">Contact</h4>
+    <p
+      class="font-light text-lg mt-2 leading-tight max-w-[590px] lg:text-[37px]"
+    >
       Contact us today to learn more about how we can help you succeed on
       Instagram
     </p>
     <div class="flex gap-4 items-center mt-8">
       <div
-        class="bg-[radial-gradient(50%_50%_at_50%_50%,_#FEF3A4_0%,_#BA891F_100%)] w-[73px] h-[73px] flex justify-center items-center rounded-full"
+        class="bg-[radial-gradient(50%_50%_at_50%_50%,_#FEF3A4_0%,_#BA891F_100%)] w-12 h-12 flex justify-center items-center rounded-full lg:w-[73px] lg:h-[73px]"
       >
         <Icon
           name="fa-solid:mobile-alt"
-          class="text-[rgba(34,_34,_34,_1)] text-4xl"
+          class="text-[rgba(34,_34,_34,_1)] text-lg lg:text-4xl"
         />
       </div>
-      <p class="text-[rgba(34,_34,_34,_1)] font-bold text-2xl">305-497-2324</p>
+      <p class="text-[rgba(34,_34,_34,_1)] text-lg font-bold lg:text-2xl">
+        305-497-2324
+      </p>
     </div>
   </div>
 </section>
