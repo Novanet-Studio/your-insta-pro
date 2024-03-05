@@ -5,39 +5,37 @@ import markSvg from "../assets/images/mark.svg";
 ---
 
 <section
-  class="min-h-[calc(100vh-150px)] h-full w-full bg-no-repeat bg-cover bg-right relative z-10 bg-black bg-opacity-50 px-6 flex justify-between lg:min-h-[calc(100vh-100px)] lg:px-20 lg:bg-center"
+  class="min-h-[calc(100vh-70px)] h-full w-full bg-no-repeat bg-cover bg-right relative z-10 bg-black bg-opacity-50 px-6 flex flex-col justify-between lg:min-h-[calc(100vh-100px)] lg:px-20 lg:bg-center"
   style={{ backgroundImage: `url(${bgImage.src})` }}
 >
   <div
-    class="self-start max-w-[10.75rem] w-full relative mt-24 lg:max-w-[515px]"
+    class="self-center max-w-[17.50rem] w-full relative mt-24 lg:max-w-[515px] lg:self-start"
   >
-    <!-- <Image src={markSvg} alt="SVG" class="absolute" /> -->
     <img src={markSvg.src} alt="SVG" class="absolute" />
     <div class="px-4 mb-3 leading-tight lg:px-8 lg:mb-6">
-      <p class="font-extrabold text-2xl text-[#222222] lg:text-[80px]">Your</p>
-      <p class="font-extrabold text-2xl text-[#222222] lg:text-[80px]">
+      <p class="font-extrabold text-5xl text-[#222222] lg:text-[80px]">Your</p>
+      <p class="font-extrabold text-5xl text-[#222222] lg:text-[80px]">
         Instagram
       </p>
-      <p class="font-extrabold text-2xl text-[#222222] lg:text-[80px]">Pro.</p>
+      <p class="font-extrabold text-5xl text-[#222222] lg:text-[80px]">Pro.</p>
     </div>
     <span
-      class="text-[#BA891F] font-bold absolute text-xs z-10 -bottom-2 left-2 bg-transparent lg:text-[37px] lg:-bottom-8 lg:left-6"
+      class="text-[#BA891F] font-bold absolute text-xl z-10 -bottom-9 left-4 bg-transparent lg:text-[37px] lg:-bottom-8 lg:left-6"
       >Instagram Marketing</span
     >
   </div>
 
-  <div class="flex self-end items-center mb-24 gap-2">
-    <!-- size={56} -->
+  <div class="flex items-center self-center mb-24 gap-4 lg:self-end">
     <Icon
       name="fa6-solid:arrow-down"
       color="#BA891F"
-      class="animate-bounce text-5xl"
+      class="animate-bounce text-3xl"
     />
     <div>
-      <p class="text-sm font-bold text-[#222] lg:text-3xl">
+      <p class="text-lg font-bold text-[#222] lg:text-3xl">
         Are you looking to boost your
       </p>
-      <p class="text-sm font-bold text-[#222] lg:text-3xl">
+      <p class="text-lg font-bold text-[#222] lg:text-3xl">
         brand's presence on Instagram?
       </p>
     </div>
