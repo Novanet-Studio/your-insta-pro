@@ -6,15 +6,21 @@ import markSvg from "../assets/images/to-see-work-mark.svg";
   class="min-h-[200px] h-full bg-[#E8E8E8] flex items-center justify-center px-8 relative md:min-h-[350px] md:px-10 lg:min-h-[22rem] lg:px-24"
 >
   <div class="w-full relative md:max-w-[550px] lg:max-w-[35rem]">
-    <img src={markSvg.src} alt="Mark SVG" class="absolute" />
+    <img src={markSvg.src} alt="Mark SVG" class="absolute -z-10" />
     <div class="px-4 leading-tight md:px-6 lg:px-8 lg:mb-6">
       <p
         class="font-light text-sm text-[#222222] mt-3 md:text-2xl md:mt-5 lg:text-2xl lg:mt-6"
       >
-        Currently managing the Instagram accounts for <span class="font-bold"
-          >@mgmedical_</span
+        Currently managing the Instagram accounts for <a
+          class="font-bold hover:underline z-10"
+          href="https://www.instagram.com/mgmedical_"
+          target="_blank">@mgmedical_</a
         > and
-        <span class="font-bold">@karwasserwigs</span>
+        <a
+          class="font-bold hover:underline"
+          href="https://www.instagram.com/karwasserwigs"
+          target="_blank">@karwasserwigs</a
+        >
       </p>
     </div>
     <span
